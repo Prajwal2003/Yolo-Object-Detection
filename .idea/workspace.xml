@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e34fbdf3-24be-40ad-b4ee-a5d7612081e8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Yolo_object_detection.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chigari Detector/Chigari_Detection_Model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chigari Detector/best.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chigari Detector/test.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chigari Detector/test1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/People Counter/mask.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/People Counter/people_counter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/People Counter/sort.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Yolo/Yolo_basics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Yolo/images/1.JPEG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Yolo/images/2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vehicle Counter/download.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vehicle Counter/mask.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vehicle Counter/sort.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vehicle Counter/vehicle_counter_image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vehicle Counter/vehicle_counter_video.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yolo Webcam/Yolo_videos.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yolo Webcam/Yolo_webcam.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yolo Webcam/videos/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yolo Webcam/videos/2.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yolo Webcam/videos/3.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yolo Webcam/videos/4.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yolo Webcam/videos/5.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yolo Webcam/videos/6.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yolo Webcam/videos/7.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yolo Webcam/videos/8.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Yolo Webcam/videos/9.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirement.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2qP1PAH9sVt9qserRtJ4iPqsXDS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.Chigari_Detection_Model.executor": "Run",
+    "Python.Yolo_basics.executor": "Run",
+    "Python.Yolo_videos.executor": "Run",
+    "Python.Yolo_webcam.executor": "Run",
+    "Python.car_counter.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.people_counter.executor": "Run",
+    "Python.vehicle_counter_image.executor": "Run",
+    "Python.vehicle_counter_video.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/starkz/PycharmProjects/Yolo_object_detection/People Counter",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "editor.preferences.tabs"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/People Counter" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Chigari Detector" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Vehicle Counter" />
+      <recent name="$PROJECT_DIR$/People Counter" />
+      <recent name="$PROJECT_DIR$/Car Counter" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-1b1018131e27-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.180" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e34fbdf3-24be-40ad-b4ee-a5d7612081e8" name="Changes" comment="" />
+      <created>1734549369976</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1734549369976</updated>
+    </task>
+    <servers />
+  </component>
+</project>
