@@ -5,38 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e34fbdf3-24be-40ad-b4ee-a5d7612081e8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Yolo_object_detection.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chigari Detector/Chigari_Detection_Model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chigari Detector/best.pt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chigari Detector/test.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chigari Detector/test1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/People Counter/mask.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/People Counter/people_counter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/People Counter/sort.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Yolo/Yolo_basics.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Yolo/images/1.JPEG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Yolo/images/2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vehicle Counter/download.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vehicle Counter/mask.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vehicle Counter/sort.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vehicle Counter/vehicle_counter_image.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vehicle Counter/vehicle_counter_video.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Yolo Webcam/Yolo_videos.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Yolo Webcam/Yolo_webcam.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Yolo Webcam/videos/1.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Yolo Webcam/videos/2.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Yolo Webcam/videos/3.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Yolo Webcam/videos/4.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Yolo Webcam/videos/5.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Yolo Webcam/videos/6.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Yolo Webcam/videos/7.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Yolo Webcam/videos/8.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Yolo Webcam/videos/9.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirement.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Smart_Traffic_Managaement_system/logic.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,9 +25,9 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2qP1PAH9sVt9qserRtJ4iPqsXDS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -74,11 +43,13 @@
     "Python.Yolo_videos.executor": "Run",
     "Python.Yolo_webcam.executor": "Run",
     "Python.car_counter.executor": "Run",
+    "Python.logic.executor": "Run",
     "Python.main.executor": "Run",
     "Python.people_counter.executor": "Run",
     "Python.vehicle_counter_image.executor": "Run",
     "Python.vehicle_counter_video.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/starkz/PycharmProjects/Yolo_object_detection/People Counter",
     "run.code.analysis.last.selected.profile": "pProject Default",
