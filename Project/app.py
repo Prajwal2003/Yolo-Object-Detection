@@ -1,6 +1,5 @@
 import streamlit as st
 import time
-import random
 from pathlib import Path
 import os
 from ultralytics import YOLO
@@ -8,18 +7,18 @@ import numpy as np
 import cv2
 
 # Constants
-DEFAULT_GREEN_TIME = 5  # Default green time when vehicle count is average or no vehicles
-MAX_GREEN_TIME = 100  # Maximum green time allowed for a side
-RED_AMBER_TIME = 2  # Red and amber signal time
-VEHICLE_GREEN_MULTIPLIER = 2  # Green time multiplier per vehicle
-CHIGARI_GREEN_TIME = 10  # Fixed green time for Chigari buses
-MIN_GREEN_TIME = 15  # Minimum green time for low traffic
-LOW_TRAFFIC_GREEN_TIME = 10  # Green time for very low traffic (2 or 3 vehicles)
+DEFAULT_GREEN_TIME = 5
+MAX_GREEN_TIME = 100
+RED_AMBER_TIME = 2
+VEHICLE_GREEN_MULTIPLIER = 2
+CHIGARI_GREEN_TIME = 10
+MIN_GREEN_TIME = 15
+LOW_TRAFFIC_GREEN_TIME = 10
 
 # Base folder for traffic images
 IMAGE_FOLDER_PATH = Path(r"/Users/starkz/PycharmProjects/Yolo_object_detection/Project/Traffic Images/")
 SIDES = ["side_1", "side_2", "side_3", "side_4"]
-CHIGARI_FOLDER = "chigari"  # Folder for Chigari buses
+CHIGARI_FOLDER = "chigari"
 
 
 def detect_vehicles(images):
@@ -55,7 +54,7 @@ def detect_vehicles(images):
                 detections = np.vstack((detections, current_array))
 
     vehicle_count = len(detections)
-    print("Count =", vehicle_count)
+    st.write("Count =", vehicle_count)
 
     return vehicle_count
 
@@ -137,40 +136,36 @@ def traffic_management():
                     st.write(f"{green_icon} Next Side: {next_side}, Green Time = {next_green_time} seconds")
                     display_timer(next_green_time, green_icon, message=f"Next side {next_side} Green Time")
 
-            # Display red and amber time
             st.write(f"{red_icon}{amber_icon} Red and Amber Time for {current_side}: {RED_AMBER_TIME} seconds")
             display_timer(RED_AMBER_TIME, amber_icon, message=f"{current_side} Red/Amber")
 
-        # Process Chigari after all sides or at random intervals
-        chigari_folder = IMAGE_FOLDER_PATH / CHIGARI_FOLDER
-        if not chigari_folder.exists():
-            st.write(f"Chigari folder {chigari_folder} does not exist. Skipping Chigari simulation.")
-            continue
+            chigari_folder = IMAGE_FOLDER_PATH / CHIGARI_FOLDER
+            if not chigari_folder.exists():
+                st.write(f"Chigari folder {chigari_folder} does not exist. Skipping Chigari simulation.")
+                continue
 
-        chigari_images = list(chigari_folder.glob("*.jpg")) + list(chigari_folder.glob("*.png"))
-        chigari_images.sort(key=lambda img: os.path.getmtime(img), reverse=True)
+            chigari_images = list(chigari_folder.glob("*.jpg")) + list(chigari_folder.glob("*.png"))
+            chigari_images.sort(key=lambda img: os.path.getmtime(img), reverse=True)
 
-        if chigari_image_tracker >= len(chigari_images):
-            st.write(f"{red_icon} No more images to process for Chigari.")
-        else:
-            # Fetch the most recent Chigari image
-            current_image = chigari_images[chigari_image_tracker]
-            chigari_image_tracker += 1
+            if chigari_image_tracker >= len(chigari_images):
+                st.write(f"{red_icon} No more images to process for Chigari.")
+            else:
+                current_image = chigari_images[chigari_image_tracker]
+                chigari_image_tracker += 1
 
-            # Stop all sides and process Chigari
-            st.write(f"{red_icon} Chigari Bus Detected! Halting all sides.")
-            for side in SIDES:
-                st.write(f"{red_icon} {side}: STOP")
+                st.write(f"{red_icon} Chigari Bus Detected! Halting all sides.")
+                for side in SIDES:
+                    st.write(f"{red_icon} {side}: STOP")
 
-            st.write(f"{green_icon} Chigari Lane: Traffic Count = 1, Green Time = {CHIGARI_GREEN_TIME} seconds")
-            display_timer(CHIGARI_GREEN_TIME, green_icon, message="Chigari Lane Green")
+                st.write(f"{green_icon} Chigari Lane: Traffic Count = 1, Green Time = {CHIGARI_GREEN_TIME} seconds")
+                display_timer(CHIGARI_GREEN_TIME, green_icon, message="Chigari Lane Green")
 
-        # Break the loop if all images are processed
-        if all(side_image_tracker[side] >= len(list((IMAGE_FOLDER_PATH / side).glob("*.jpg")) + 
-                                                list((IMAGE_FOLDER_PATH / side).glob("*.png"))) for side in SIDES) \
-                and chigari_image_tracker >= len(chigari_images):
-            st.write("All images processed. Simulation complete.")
-            break
+            # Break the loop if all images are processed
+            if all(side_image_tracker[side] >= len(list((IMAGE_FOLDER_PATH / side).glob("*.jpg")) +
+                                                    list((IMAGE_FOLDER_PATH / side).glob("*.png"))) for side in SIDES) \
+                    and chigari_image_tracker >= len(chigari_images):
+                st.write("All images processed. Simulation complete.")
+                break
 
 # Run the application
 traffic_management()
