@@ -7,7 +7,7 @@ from sort import *
 
 cap = cv2.VideoCapture("../Yolo Webcam/videos/2.mp4")
 
-model = YOLO("../Test Yolo/Yolo_weights/yolov8n.pt")
+model = YOLO("../Test Yolo/Yolo_weights/yolov10s.pt")
 
 mask = cv2.imread("mask.png")
 tracker = Sort(max_age=20, min_hits=3, iou_threshold=0.3 )
@@ -19,7 +19,7 @@ classNames = ["person", "bicycle", "car", "motorbike", "aeroplane", "bus", "trai
 while True:
     success, img = cap.read()
     imgreg = cv2.bitwise_and(img, mask)
-    res = model(imgreg, stream=True)
+    res = model.predict(imgreg, stream=True)
     detections = np.empty((0,5))
     for r in res:
         boxes = r.boxes
@@ -59,5 +59,4 @@ while True:
     print(len(count))
     cv2.imshow("Image", img)
     print(count)
-    cv2.imshow("Detection Region", imgreg)
     cv2.waitKey(1)
