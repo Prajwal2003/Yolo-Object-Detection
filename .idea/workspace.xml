@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e34fbdf3-24be-40ad-b4ee-a5d7612081e8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Smart_Traffic_Managaement_system/logic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vehicle Counter/ambulencetest.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chigari Detector/Chigari_Detection_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chigari Detector/Chigari_Detection_Model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vehicle Counter/vehicle_counter_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/Vehicle Counter/vehicle_counter_image.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +27,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -42,6 +46,7 @@
     "Python.Yolo_basics.executor": "Run",
     "Python.Yolo_videos.executor": "Run",
     "Python.Yolo_webcam.executor": "Run",
+    "Python.app.executor": "Run",
     "Python.car_counter.executor": "Run",
     "Python.logic.executor": "Run",
     "Python.main.executor": "Run",
@@ -52,7 +57,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/starkz/PycharmProjects/Yolo_object_detection/People Counter",
-    "run.code.analysis.last.selected.profile": "pProject Default",
+    "run.code.analysis.last.selected.profile": "aDefault",
     "settings.editor.selected.configurable": "editor.preferences.tabs"
   }
 }]]></component>
@@ -61,17 +66,17 @@
       <recent name="$PROJECT_DIR$/People Counter" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Chigari Detector" />
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Vehicle Counter" />
-      <recent name="$PROJECT_DIR$/People Counter" />
-      <recent name="$PROJECT_DIR$/Car Counter" />
+      <recent name="$PROJECT_DIR$/Chigari Detector" />
+      <recent name="$PROJECT_DIR$/Smart_Traffic_Managaement_system/Traffic Images" />
+      <recent name="$PROJECT_DIR$/Smart_Traffic_Managaement_system" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-1b1018131e27-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.180" />
+        <option value="bundled-python-sdk-495700d161d3-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.220" />
       </set>
     </attachedChunks>
   </component>

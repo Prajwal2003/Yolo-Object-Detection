@@ -4,7 +4,8 @@ import numpy as np
 
 model = YOLO("../Test Yolo/Yolo_weights/yolov8l.pt")
 
-img = cv2.imread("images (1).jpeg")
+loc = "ambulencetest.jpeg"
+img = cv2.imread(loc)
 imgreg = img
 res = model(imgreg, stream=True)
 

@@ -6,7 +6,6 @@ from ultralytics import YOLO
 import numpy as np
 import cv2
 
-# Constants
 DEFAULT_GREEN_TIME = 5
 MAX_GREEN_TIME = 100
 RED_AMBER_TIME = 2
@@ -15,7 +14,6 @@ CHIGARI_GREEN_TIME = 10
 MIN_GREEN_TIME = 15
 LOW_TRAFFIC_GREEN_TIME = 10
 
-# Base folder for traffic images
 IMAGE_FOLDER_PATH = Path(r"/Users/starkz/PycharmProjects/Yolo_object_detection/Project/Traffic Images/")
 SIDES = ["side_1", "side_2", "side_3", "side_4"]
 CHIGARI_FOLDER = "chigari"
@@ -24,7 +22,7 @@ CHIGARI_FOLDER = "chigari"
 def detect_vehicles(images):
     model = YOLO("/Users/starkz/PycharmProjects/Yolo_object_detection/Test Yolo/Yolo_weights/yolov8n.pt")
 
-    img = cv2.imread(str(images))
+    img = cv2.imread(images[0])
     imgreg = img
     res = model(imgreg, stream=True)
 
@@ -67,7 +65,6 @@ def calculate_green_time(vehicle_count):
         green_time = 7 + (vehicle_count-2) * 2
         return min(green_time, MAX_GREEN_TIME)
 
-# Function to display a timer with a specific symbol
 def display_timer(duration, icon, message=None):
     for remaining in range(duration, 0, -1):
         st.write(f"{icon} {message or ''} Timer: {remaining} seconds remaining")
@@ -112,14 +109,12 @@ def traffic_management():
 
                 green_time = calculate_green_time(vehicle_count)
 
-            # Display traffic count and green time for the current side
             st.write(f"{green_icon} {current_side}: Traffic Count = {vehicle_count}, Green Time = {green_time} seconds")
-            
-            # Start showing green time countdown for the current side
+
             display_timer(green_time, green_icon, message=f"{current_side} Green")
 
             if green_time == 5:
-                if i < len(SIDES) - 1:  # Only if there's a next side
+                if i < len(SIDES) - 1:
                     next_side = SIDES[i + 1]
                     next_side_folder = IMAGE_FOLDER_PATH / next_side
                     next_side_images = list(next_side_folder.glob("*.jpg")) + list(next_side_folder.glob("*.png"))

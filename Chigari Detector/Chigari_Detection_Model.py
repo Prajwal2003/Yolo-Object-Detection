@@ -4,7 +4,7 @@ from collections import Counter
 
 model = YOLO("/Users/starkz/PycharmProjects/Yolo_object_detection/Chigari Detector/best.pt")
 
-image_path = "test1.jpeg"
+image_path = "test.jpeg"
 
 results = model(image_path)
 
