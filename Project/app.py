@@ -5,6 +5,7 @@ import os
 from ultralytics import YOLO
 import numpy as np
 import cv2
+from collections import Counter
 
 DEFAULT_GREEN_TIME = 5
 MAX_GREEN_TIME = 100
@@ -19,12 +20,31 @@ SIDES = ["side_1", "side_2", "side_3", "side_4"]
 CHIGARI_FOLDER = "chigari"
 
 
+def detect_chagari(images):
+    model = YOLO("/Users/starkz/PycharmProjects/Yolo_object_detection/Test Yolo/Yolo_weights/Chigari.pt")
+
+    results = model(images)
+
+    class_names = model.names
+    detections = results[0].boxes.cls
+
+    detected_classes = [class_names[int(cls_idx)] for cls_idx in detections]
+
+    class_counts = Counter(detected_classes)
+
+    total_count = 0
+    for obj_class, count in class_counts.items():
+        st.write(f"{obj_class}: {count}")
+        total_count += count
+
+    return total_count
+
 def detect_vehicles(images):
-    model = YOLO("/Users/starkz/PycharmProjects/Yolo_object_detection/Test Yolo/Yolo_weights/yolov8n.pt")
+    model = YOLO("/Users/starkz/PycharmProjects/Yolo_object_detection/Test Yolo/Yolo_weights/yolov10s.pt")
 
     img = cv2.imread(images[0])
     imgreg = img
-    res = model(imgreg, stream=True)
+    res = model.predict(imgreg, stream=True)
 
     classNames = ["person", "bicycle", "car", "motorbike", "aeroplane", "bus", "train", "truck", "boat",
                   "traffic light", "fire hydrant", "stop sign", "parking meter", "bench", "bird", "cat", "dog", "horse",
