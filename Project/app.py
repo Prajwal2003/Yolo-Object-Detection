@@ -82,7 +82,7 @@ def calculate_green_time(vehicle_count):
     elif vehicle_count <= 5:
         return LOW_TRAFFIC_GREEN_TIME
     else:
-        green_time = 7 + (vehicle_count-2) * 2
+        green_time = 1 + (vehicle_count-2) * 1
         return min(green_time, MAX_GREEN_TIME)
 
 def display_timer(duration, icon, message=None):
