@@ -2,9 +2,9 @@ from ultralytics import YOLO
 import cv2
 from collections import Counter
 
-model = YOLO("/Users/starkz/PycharmProjects/Yolo_object_detection/Chigari Detector/best.pt")
+model = YOLO("/Users/starkz/PycharmProjects/Yolo_object_detection/Test Yolo/Yolo_weights/Chigari.pt")
 
-image_path = "test.jpeg"
+image_path = "test1.jpeg"
 
 results = model(image_path)
 
